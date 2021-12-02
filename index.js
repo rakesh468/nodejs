@@ -10,7 +10,7 @@ console.log(process.env);
 
 const App=express();
 
- const PORT=9000;
+ const PORT=process.env.PORT
  App.use(express.json());
 
 
