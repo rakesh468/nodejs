@@ -1,17 +1,19 @@
 // const express=require('express')-for common js
 import dotenv from 'dotenv';
+import cors from 'cors';
 import express, { response } from 'express';
 import { MongoClient } from 'mongodb';
 import {moviesRouter} from "./route/movies.js"
 
 dotenv.config();
-
 console.log(process.env);
-
+ 
 const App=express();
+const PORT=process.env.PORT
 
- const PORT=process.env.PORT
- App.use(express.json());
+App.use(cors());
+
+App.use(express.json());
 
 
 
