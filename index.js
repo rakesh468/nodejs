@@ -28,7 +28,7 @@ return client
 }
 export const client= await createconnection();
 App.get("/",(request,response)=>{
-    response.send("hello  Everyone !!!!!!!🥰😁")
+    response.send("hello  students !!!!!!!🥰😁")
 });
 
 App.use("/movies",moviesRouter)
